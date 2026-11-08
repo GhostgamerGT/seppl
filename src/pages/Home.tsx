@@ -15,9 +15,9 @@ const heroImg = '/images/gruppe-seppl.jpg';
 const actionImg = '/images/gruppe-maibaum5.jpg';
 
 const features = [
-  { icon: Music, title: 'Echtes Brauchtum', text: 'Wir pflegen den Schuhplattler – den traditionellen Prankentanz aus dem Mühlviertel.' },
+  { icon: Music, title: 'Echter Brauchtum', text: 'Wir pflegen den Schuhplattler' },
   { icon: Users, title: 'Gemeinschaft', text: 'Über 40 Mitglieder jeden Alters freuen sich auf neue Plattlerinnen und Plattler.' },
-  { icon: Award, title: 'Auftritte & Feste', text: 'Regelmäßige Schuhplattler-Auftritte bei Festen, Märkten und Anlässen in der Region.' },
+  { icon: Award, title: 'Auftritte & Feste', text: 'Regelmäßige Schuhplattler-Auftritte bei Festen und Anlässen in der Region.' },
 ];
 
 function formatDate(iso: string) {
@@ -58,8 +58,7 @@ export default function Home() {
               Engerwitzdorfer <span className="text-club-500">Schuhplattler</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-200">
-              Tradition, Herz und Schwung – wir halten das Schuhplatteln im Mühlviertel am Leben und
-              teilen unsere Freude am Prankentanz mit dir.
+              Tradition, Herz und Schwung – wir halten das Schuhplatteln im Mühlviertel am Leben.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link to="/ueber-uns" className="btn-primary">
@@ -94,9 +93,9 @@ export default function Home() {
               Brauchtum, das verbindet
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-stone-600">
-              Der {club.name} ist seit {club.founded} fester Bestandteil des Brauchtumslebens in
+              Die {club.name} sind seit {club.founded} fester Bestandteil des Brauchtumslebens in
               Engerwitzdorf und Umgebung. Mit Schwung, Tradition und Herz widmen wir uns
-              ausschließlich dem Schuhplattler – bei Proben, Auftritten und Festen.
+              dem Schuhplattler – bei Proben, Auftritten und Festen.
             </p>
           </Reveal>
 
@@ -141,17 +140,16 @@ export default function Home() {
               <p className="eyebrow">Unser Verein</p>
               <h2 className="section-title mt-3">Leidenschaft fürs Schuhplatteln</h2>
               <p className="mt-5 text-base leading-relaxed text-stone-600">
-                Beim Schuhplattler geht es um mehr als nur den Tanz – es ist Ausdruck von Freude,
+                Beim Schuhplattlen geht es um mehr als nur das Platteln – es ist Ausdruck von Freude,
                 Gemeinschaft und verwurzelter Heimatverbundenheit. Wir laden dich ein, Teil dieser
-                lebendigen Tradition zu werden, egal ob als Plattlerin oder Plattler, als Fördermitglied
+                lebendigen Tradition zu werden, egal ob als Plattlerin oder Plattler, als Sponsor
                 oder als begeistertes Publikum. Die Teilnahme kostet nichts – jeder ist willkommen!
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  'Wöchentliche Schuhplattler-Proben für alle Altersgruppen',
-                  'Regelmäßige Schuhplattler-Auftritte bei regionalen Festen',
+                  'Zweiwöchentliche Schuhplattler-Proben',
+                  'Regelmäßige Auftritte bei regionalen Festen',
                   'Gemeinsame Ausflüge und Vereinsfeiern',
-                  'Jugendarbeit mit Spaß am Schuhplatteln',
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm text-stone-700">
                     <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-club-100 text-club-600">
@@ -279,7 +277,7 @@ export default function Home() {
                 Werde Teil unserer Gemeinschaft
               </h2>
               <p className="mt-4 text-lg text-club-100">
-                Ob als aktives Mitglied oder als Förderer – die Teilnahme ist kostenlos. Wir freuen uns
+                Die Teilnahme ist kostenlos. Wir freuen uns
                 über jeden, der unsere Tradition mitträgt.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">

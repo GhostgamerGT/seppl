@@ -75,7 +75,7 @@ export type RehearsalGroup = {
 };
 
 export const rehearsals: RehearsalGroup[] = [
-  { group: 'Alle', day: 'Freitag', time: '20:00 Uhr', location: 'Vereinsheim Engerwitzdorf' },
+  { group: 'Probe', day: 'Freitag', time: '20:00 Uhr', location: 'Riepl Gallneukirchen' },
 ];
 
 export type MembershipTier = {
@@ -86,44 +86,6 @@ export type MembershipTier = {
   highlighted?: boolean;
 };
 
-export const membershipTiers: MembershipTier[] = [
-  {
-    name: 'Jugendmitglied',
-    price: 'Kostenlos',
-    period: '',
-    features: [
-      'Für Mitglieder bis 18 Jahre',
-      'Freie Teilnahme am Schuhplattler-Training',
-      'Mitwirkung bei Auftritten',
-      'Vereinsheim-Nutzung',
-    ],
-  },
-  {
-    name: 'Aktives Mitglied',
-    price: 'Kostenlos',
-    period: '',
-    features: [
-      'Freie Teilnahme am Schuhplattler-Training',
-      'Mitwirkung bei Auftritten & Ausflügen',
-      'Vereinsheim-Nutzung',
-      'Stimmrecht bei der Hauptversammlung',
-      'Vereinskleidung wird gestellt',
-    ],
-    highlighted: true,
-  },
-  {
-    name: 'Fördermitglied',
-    price: 'Kostenlos',
-    period: '',
-    features: [
-      'Unterstützung des Vereinslebens',
-      'Einladung zu allen Veranstaltungen',
-      'Namentliche Nennung im Jahresbericht',
-      'Keine aktive Teilnahme erforderlich',
-      'Freiwillige Spenden willkommen',
-    ],
-  },
-];
 
 export type GalleryImage = {
   src: string;
@@ -154,32 +116,32 @@ export const galleryImages: GalleryImage[] = [
   },
   { 
     src: '/images/gruppe-sponsor.jpg', 
-    alt: 'Gruppenbild mit den Sponsoren des Vereins vor den Werbtransparenten in der Festhalle', 
+    alt: 'Gruppenbild mit den Sponsoren des Vereins', 
     category: 'Auftritt' 
   },
   { 
     src: '/images/holzhacker.jpg', 
-    alt: 'Schuhplattler-Mitglieder konzentriert beim gemeinsamen Proben am Holzbalken', 
+    alt: 'Schuhplattler-Mitglieder konzentriert beim gemeinsamen Proben am Holzhacker', 
     category: 'Probe' 
   },
   { 
     src: '/images/holzhacker2.jpg', 
-    alt: 'Vereinsprobe in der Halle mit Traktor zur Vorbereitung auf den nächsten Auftritt', 
+    alt: 'Vereinsprobe in der Halle zur Vorbereitung auf den nächsten Auftritt', 
     category: 'Probe' 
   },
   { 
     src: '/images/holzhacker3.jpg', 
-    alt: 'Die Plattler beim Einstudieren der rhythmischen Schläge auf dem Holzbalken', 
+    alt: 'Die Plattler beim Einstudieren des Holzhackers', 
     category: 'Probe' 
   },
   { 
     src: '/images/riepl.jpg', 
-    alt: 'Gemütliches Zusammensitzen und Kameradschaftspflege der Vereinsmitglieder beim Wirt', 
+    alt: 'Gemütliches Zusammensitzen und Kameradschaftspflege der Vereinsmitglieder beim Riepl', 
     category: 'Fest' 
   },
   { 
     src: '/images/wandertag.jpg', 
-    alt: 'Gut gelaunte Vereinsgruppe beim gemeinsamen Ausflug am Bahnhofsgelände', 
+    alt: 'Gut gelaunte Vereinsgruppe beim gemeinsamen Wandertag', 
     category: 'Fest' 
   },
   { 

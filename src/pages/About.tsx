@@ -12,7 +12,7 @@ export default function About() {
       <PageHeader
         eyebrow="Über uns"
         title="Der Verein & seine Menschen"
-        description={`Erfahre mehr über den ${club.name}, unseren Vorstand und unsere Probezeit.`}
+        description={`Erfahre mehr über die ${club.name}, unseren Vorstand und unsere Probezeit.`}
         crumbs={[{ label: 'Start', to: '/' }, { label: 'Über uns' }]}
       />
 
@@ -29,12 +29,12 @@ export default function About() {
               <p className="eyebrow">Unsere Geschichte</p>
               <h2 className="section-title mt-3">Seit {club.founded} im Herzen des Mühlviertels</h2>
               <p className="mt-5 text-base leading-relaxed text-stone-600">
-                Gegründet im Jahr {club.founded}, hat sich der {club.name} zu einer festen
+                Gegründet im Jahr {club.founded}, haben sich die {club.name} zu einer festen
                 Größe im Brauchtumsleben der Region entwickelt. Was mit einer kleinen Gruppe
                 engagierter Plattler begann, ist heute ein lebendiger Verein mit über 40 Mitgliedern.
               </p>
               <p className="mt-4 text-base leading-relaxed text-stone-600">
-                Unser Anliegen ist es, den Schuhplattler – den traditionellen Prankentanz – zu
+                Unser Anliegen ist es, den Schuhplattler zu
                 bewahren und an die nächste Generation weiterzugeben. Regelmäßige Proben, Auftritte
                 bei Festen und die Pflege des Gemeinschaftslebens stehen dabei im Mittelpunkt. Die
                 Teilnahme ist für alle kostenlos.
@@ -43,7 +43,7 @@ export default function About() {
                 {[
                   { num: `${new Date().getFullYear() - club.founded}+`, label: 'Jahre Tradition' },
                   { num: '40+', label: 'Aktive Mitglieder' },
-                  { num: '12+', label: 'Auftritte/Jahr' },
+                  { num: '3+', label: 'Auftritte/Jahr' },
                 ].map((stat) => (
                   <div key={stat.label} className="rounded-2xl bg-white p-4 text-center shadow-sm">
                     <div className="font-display text-2xl font-bold text-club-600">{stat.num}</div>
@@ -102,7 +102,7 @@ export default function About() {
               <h2 className="section-title mt-3">Jeden Freitag um 20 Uhr</h2>
               <p className="mt-4 text-base leading-relaxed text-stone-600">
                 Neue Mitglieder sind jederzeit herzlich willkommen – die Teilnahme ist kostenlos.
-                Komm einfach vorbei, eine vorherige Anmeldung ist nicht erforderlich.
+                Bei Interesse kannst du uns gerne eine E-Mail schreiben.
               </p>
               <div className="mt-8 space-y-4">
                 {rehearsals.map((r) => (
