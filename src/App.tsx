@@ -14,6 +14,7 @@ import Contact from '@/pages/Contact';
 import Membership from '@/pages/Membership';
 import Impressum from '@/pages/Impressum';
 import Datenschutz from '@/pages/Datenschutz';
+import Hoerproben from '@/pages/Hoerproben';
 
 function ScrollToTop() {
   const { pathname } = useLocation();

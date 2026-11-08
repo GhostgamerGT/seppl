@@ -39,6 +39,7 @@ export default function Footer() {
                 { to: '/', label: 'Start' },
                 { to: '/ueber-uns', label: 'Über uns' },
                 { to: '/galerie', label: 'Galerie' },
+                { to: '/hoerproben', label: 'Hörproben' },
                 { to: '/mitgliedschaft', label: 'Mitgliedschaft' },
                 { to: '/kontakt', label: 'Kontakt' },
               ].map((l) => (

@@ -1,12 +1,14 @@
 export const club = {
   name: 'Engerwitzdorfer Schuhplattler',
   shortName: 'Schuhplattler Engerwitzdorf',
-  founded: 1985,
+  founded: 1993,
   location: 'Engerwitzdorf, Oberösterreich',
-  address: 'Marktplatz 1, 4209 Engerwitzdorf',
+  address: 'Lerchenweg 16, 4209 Engerwitzdorf',
   email: 'kontakt@schuhplattler-engerwitzdorf.at',
-  phone: '+43 7235 12345',
-  ibu: 'Obmann Josef Huber',
+  phone: '+43 664 6152620',
+  ibu: 'Leiter Roland Gutenbrunner',
+  audioUrl: 'https://sepplcc.jimdoweb.com/h%C3%B6rproben',
+  mascotImage: 'https://image.jimcdn.com/app/cms/image/transf/dimension=335x10000:format=jpg/path/seaded713c93d3f2f/image/i9357ffd47325e34c/version/1537389119/image.jpg',
 };
 
 export type NewsItem = {
@@ -59,12 +61,12 @@ export type BoardMember = {
 };
 
 export const board: BoardMember[] = [
-  { name: 'Josef Huber', role: 'Obmann', email: 'obmann@schuhplattler-engerwitzdorf.at' },
-  { name: 'Maria Gruber', role: 'Obmann-Stellvertreterin', email: 'stellvertreter@schuhplattler-engerwitzdorf.at' },
-  { name: 'Andreas Bauer', role: 'Kassier', email: 'kassier@schuhplattler-engerwitzdorf.at' },
-  { name: 'Sabine Steiner', role: 'Schriftführerin', email: 'schrift@schuhplattler-engerwitzdorf.at' },
-  { name: 'Thomas Eder', role: 'Reiseleiter', email: 'reisen@schuhplattler-engerwitzdorf.at' },
-  { name: 'Lisa Moser', role: 'Jugendbetreuerin', email: 'jugend@schuhplattler-engerwitzdorf.at' },
+  { name: 'Roland Gutenbrunner', role: 'Leiter', image: 'https://image.jimcdn.com/app/cms/image/transf/dimension=335x10000:format=jpg/path/seaded713c93d3f2f/image/i21415f4b9a8b2608/version/1542048679/image.jpg' },
+  { name: 'Berthold Pils', role: 'Leiter-Stellvertreter', image: 'https://image.jimcdn.com/app/cms/image/transf/dimension=281x10000:format=jpg/path/seaded713c93d3f2f/image/ib7cdf8803c97e302/version/1542048740/image.jpg' },
+  { name: 'Philipp Minichberger', role: 'Kassier', image: 'https://image.jimcdn.com/app/cms/image/transf/dimension=281x10000:format=jpg/path/seaded713c93d3f2f/image/idd442239f905ca66/version/1542048698/image.jpg' },
+  { name: 'Andreas Mairhofer', role: 'Kassier-Stellvertreter', image: 'https://image.jimcdn.com/app/cms/image/transf/dimension=281x10000:format=jpg/path/seaded713c93d3f2f/image/i008cee3ebf75009f/version/1542048729/image.jpg' },
+  { name: 'Martin', role: 'Schriftführer', image: 'https://image.jimcdn.com/app/cms/image/transf/dimension=281x10000:format=jpg/path/seaded713c93d3f2f/image/ib09261716f15b8fa/version/1542048707/image.jpg' },
+  { name: 'Herwig Rammer', role: 'Schriftführer-Stellvertreter', image: 'https://image.jimcdn.com/app/cms/image/transf/dimension=281x10000:format=jpg/path/seaded713c93d3f2f/image/i935d3fd3fdac789a/version/1542048718/image.jpg' },
 ];
 
 export type RehearsalGroup = {
