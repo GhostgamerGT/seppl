@@ -1,10 +1,13 @@
-import { Clock, MapPin, Mail, User } from 'lucide-react';
+import { Clock, ExternalLink, MapPin, Volume2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/Reveal';
 import { board, rehearsals, club } from '@/lib/siteData';
 
-const aboutImg = '/images/gruppe-seppl.jpg';
-const groupImg = '/images/holzhacker3.jpg';
+const aboutImg =
+  'https://image.jimcdn.com/app/cms/image/transf/dimension=1024x512:format=jpg:rotate=270/path/seaded713c93d3f2f/image/i2ea40b8cc6acf9fb/version/1721536787/image.jpg';
+const groupImg =
+  'https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/seaded713c93d3f2f/image/i0205435207d595a2/version/1721536191/image.jpg';
 
 export default function About() {
   return (
@@ -12,7 +15,7 @@ export default function About() {
       <PageHeader
         eyebrow="Über uns"
         title="Der Verein & seine Menschen"
-        description={`Erfahre mehr über die ${club.name}, unseren Vorstand und unsere Probezeit.`}
+        description={`Erfahre mehr über den ${club.name}, unseren Vorstand und unsere Probezeit.`}
         crumbs={[{ label: 'Start', to: '/' }, { label: 'Über uns' }]}
       />
 
@@ -29,12 +32,12 @@ export default function About() {
               <p className="eyebrow">Unsere Geschichte</p>
               <h2 className="section-title mt-3">Seit {club.founded} im Herzen des Mühlviertels</h2>
               <p className="mt-5 text-base leading-relaxed text-stone-600">
-                Gegründet im Jahr {club.founded}, haben sich die {club.name} zu einer festen
+                Gegründet im Jahr {club.founded}, hat sich der {club.name} zu einer festen
                 Größe im Brauchtumsleben der Region entwickelt. Was mit einer kleinen Gruppe
                 engagierter Plattler begann, ist heute ein lebendiger Verein mit über 40 Mitgliedern.
               </p>
               <p className="mt-4 text-base leading-relaxed text-stone-600">
-                Unser Anliegen ist es, den Schuhplattler zu
+                Unser Anliegen ist es, den Schuhplattler – den traditionellen Prankentanz – zu
                 bewahren und an die nächste Generation weiterzugeben. Regelmäßige Proben, Auftritte
                 bei Festen und die Pflege des Gemeinschaftslebens stehen dabei im Mittelpunkt. Die
                 Teilnahme ist für alle kostenlos.
@@ -43,7 +46,7 @@ export default function About() {
                 {[
                   { num: `${new Date().getFullYear() - club.founded}+`, label: 'Jahre Tradition' },
                   { num: '40+', label: 'Aktive Mitglieder' },
-                  { num: '3+', label: 'Auftritte/Jahr' },
+                  { num: '12+', label: 'Auftritte/Jahr' },
                 ].map((stat) => (
                   <div key={stat.label} className="rounded-2xl bg-white p-4 text-center shadow-sm">
                     <div className="font-display text-2xl font-bold text-club-600">{stat.num}</div>
@@ -120,7 +123,7 @@ export default function About() {
               <h2 className="section-title mt-3">Jeden Freitag um 20 Uhr</h2>
               <p className="mt-4 text-base leading-relaxed text-stone-600">
                 Neue Mitglieder sind jederzeit herzlich willkommen – die Teilnahme ist kostenlos.
-                Bei Interesse kannst du uns gerne eine E-Mail schreiben.
+                Komm einfach vorbei, eine vorherige Anmeldung ist nicht erforderlich.
               </p>
               <div className="mt-8 space-y-4">
                 {rehearsals.map((r) => (
