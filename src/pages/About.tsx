@@ -71,25 +71,43 @@ export default function About() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {board.map((m, i) => (
               <Reveal key={m.name} delay={i * 90}>
-                <div className="card group flex items-center gap-4 p-6 hover:-translate-y-1 hover:shadow-lg">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-club-50 text-club-600 transition-colors group-hover:bg-club-600 group-hover:text-white">
-                    <User className="h-6 w-6" />
-                  </div>
-                  <div>
+                <div className="card group overflow-hidden hover:-translate-y-1 hover:shadow-lg">
+                  <img src={m.image} alt={m.name} className="h-56 w-full object-cover object-top" loading="lazy" />
+                  <div className="p-5">
                     <h3 className="font-display text-lg font-semibold text-stone-900">{m.name}</h3>
-                    <p className="text-sm text-club-600">{m.role}</p>
-                    <a
-                      href={`mailto:${m.email}`}
-                      className="mt-1 flex items-center gap-1.5 text-xs text-stone-500 transition-colors hover:text-club-600"
-                    >
-                      <Mail className="h-3.5 w-3.5" />
-                      {m.email}
-                    </a>
+                    <p className="mt-1 text-sm text-club-600">{m.role}</p>
                   </div>
                 </div>
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Mascot and audio */}
+      <section className="bg-cream-50 py-20 md:py-28">
+        <div className="container-px grid gap-8 lg:grid-cols-2">
+          <Reveal>
+            <div className="card flex h-full flex-col overflow-hidden sm:flex-row">
+              <img src={club.mascotImage} alt="Maskottchen da Seppl" className="h-64 w-full object-cover object-top sm:h-auto sm:w-2/5" />
+              <div className="p-7">
+                <p className="eyebrow">Unser Maskottchen</p>
+                <h2 className="section-title mt-2 text-3xl">Da Seppl</h2>
+                <p className="mt-3 text-sm leading-relaxed text-stone-600">Natürlich gehört auch unser Maskottchen „da Seppl“ zum Verein.</p>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="flex h-full flex-col justify-center rounded-3xl bg-club-700 p-8 text-white">
+              <Volume2 className="h-9 w-9 text-club-200" />
+              <h2 className="mt-5 font-display text-3xl font-bold">Hörproben</h2>
+              <p className="mt-3 max-w-md leading-relaxed text-club-100">Hör dir unsere Plattler-Musik und Auftrittsbeispiele direkt auf unserer Hörproben-Seite an.</p>
+              <Link to="/hoerproben" className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-club-700 transition-colors hover:bg-cream-100">
+                Hörproben anhören
+                <ExternalLink className="h-4 w-4" />
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 
