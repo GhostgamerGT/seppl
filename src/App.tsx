@@ -35,6 +35,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/ueber-uns" element={<About />} />
             <Route path="/galerie" element={<Gallery />} />
+            <Route path="/hoerproben" element={<Hoerproben />} />
             <Route path="/mitgliedschaft" element={<Membership />} />
             <Route path="/kontakt" element={<Contact />} />
             <Route path="/impressum" element={<Impressum />} />
