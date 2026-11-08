@@ -11,10 +11,8 @@ import {
 import Reveal from '@/components/Reveal';
 import { news, galleryImages, club } from '@/lib/siteData';
 
-const heroImg =
-  'https://images.pexels.com/photos/12327992/pexels-photo-12327992.jpeg?auto=compress&cs=tinysrgb&w=1600';
-const actionImg =
-  'https://images.pexels.com/photos/1581906/pexels-photo-1581906.jpeg?auto=compress&cs=tinysrgb&w=1200';
+const heroImg = '/images/gruppe-seppl.jpg';
+const actionImg = '/images/gruppe-maibaum5.jpg';
 
 const features = [
   { icon: Music, title: 'Echtes Brauchtum', text: 'Wir pflegen den Schuhplattler – den traditionellen Prankentanz aus dem Mühlviertel.' },

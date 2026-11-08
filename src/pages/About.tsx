@@ -3,10 +3,8 @@ import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/Reveal';
 import { board, rehearsals, club } from '@/lib/siteData';
 
-const aboutImg =
-  'https://images.pexels.com/photos/17453653/pexels-photo-17453653.jpeg?auto=compress&cs=tinysrgb&w=1200';
-const groupImg =
-  'https://images.pexels.com/photos/9275492/pexels-photo-9275492.jpeg?auto=compress&cs=tinysrgb&w=1200';
+const aboutImg = '/images/gruppe-seppl.jpg';
+const groupImg = '/images/holzhacker3.jpg';
 
 export default function About() {
   return (

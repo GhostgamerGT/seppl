@@ -132,16 +132,69 @@ export type GalleryImage = {
 };
 
 export const galleryImages: GalleryImage[] = [
-  { src: 'https://images.pexels.com/photos/12327992/pexels-photo-12327992.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Schuhplattler-Gruppe bei einem schwungvollen Bühnenauftritt', category: 'Auftritt' },
-  { src: 'https://images.pexels.com/photos/1581906/pexels-photo-1581906.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Energetischer Schuhplattler-Auftritt in traditioneller Tracht auf der Bühne', category: 'Auftritt' },
-  { src: 'https://images.pexels.com/photos/17453653/pexels-photo-17453653.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Schuhplattler-Gruppe beim lebhaften Auftritt auf dem Stadtplatz', category: 'Auftritt' },
-  { src: 'https://images.pexels.com/photos/17453654/pexels-photo-17453654.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Energetische Gruppenperformance beim Straßenfest', category: 'Auftritt' },
-  { src: 'https://images.pexels.com/photos/9275492/pexels-photo-9275492.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Tänzer in traditionellen Trachten während eines Bühnenauftritts', category: 'Auftritt' },
-  { src: 'https://images.pexels.com/photos/5871177/pexels-photo-5871177.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Historische Aufnahme eines Schuhplattler-Auftritts', category: 'Auftritt' },
-  { src: 'https://images.pexels.com/photos/12327983/pexels-photo-12327983.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Junge Schuhplattler beim Üben auf der Bühne', category: 'Probe' },
-  { src: 'https://images.pexels.com/photos/33127581/pexels-photo-33127581.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Festliche Schuhplattler-Gruppe beim Straßenfest', category: 'Fest' },
-  { src: 'https://images.pexels.com/photos/1574217/pexels-photo-1574217.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Paar im Trachtenoutfit beim Festtanz', category: 'Fest' },
-  { src: 'https://images.pexels.com/photos/34342030/pexels-photo-34342030.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Gruppe in traditioneller Festtagstracht im Freien', category: 'Fest' },
-  { src: 'https://images.pexels.com/photos/34469151/pexels-photo-34469151.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Trachtengruppe beim Tanzen im Freien', category: 'Auftritt' },
-  { src: 'https://images.pexels.com/photos/34469162/pexels-photo-34469162.jpeg?auto=compress&cs=tinysrgb&h=750&w=1200', alt: 'Trachtenpaar beim Herbsttanz im Park', category: 'Fest' },
+  { 
+    src: '/images/bier.jpg', 
+    alt: 'Schuhplattler beim schwungvollen Auftritt mit Bierkrug auf der Tanzfläche', 
+    category: 'Auftritt' 
+  },
+  { 
+    src: '/images/gruppe-maibaum2.jpg', 
+    alt: 'Großes Gruppenfoto der Engerwitzdorfer Schuhplattler vor dem Festzelt beim Maibaumaufstellen', 
+    category: 'Auftritt' 
+  },
+  { 
+    src: '/images/gruppe-maibaum5.jpg', 
+    alt: 'Trachtengruppe der Schuhplattler aufgereiht beim Festakt am Stadtplatz', 
+    category: 'Auftritt' 
+  },
+  { 
+    src: '/images/gruppe-seppl.jpg', 
+    alt: 'Offizielles Vereinsfoto der gesamten Plattler-Gruppe in traditioneller Lederhose', 
+    category: 'Auftritt' 
+  },
+  { 
+    src: '/images/gruppe-sponsor.jpg', 
+    alt: 'Gruppenbild mit den Sponsoren des Vereins vor den Werbtransparenten in der Festhalle', 
+    category: 'Auftritt' 
+  },
+  { 
+    src: '/images/holzhacker.jpg', 
+    alt: 'Schuhplattler-Mitglieder konzentriert beim gemeinsamen Proben am Holzbalken', 
+    category: 'Probe' 
+  },
+  { 
+    src: '/images/holzhacker2.jpg', 
+    alt: 'Vereinsprobe in der Halle mit Traktor zur Vorbereitung auf den nächsten Auftritt', 
+    category: 'Probe' 
+  },
+  { 
+    src: '/images/holzhacker3.jpg', 
+    alt: 'Die Plattler beim Einstudieren der rhythmischen Schläge auf dem Holzbalken', 
+    category: 'Probe' 
+  },
+  { 
+    src: '/images/riepl.jpg', 
+    alt: 'Gemütliches Zusammensitzen und Kameradschaftspflege der Vereinsmitglieder beim Wirt', 
+    category: 'Fest' 
+  },
+  { 
+    src: '/images/wandertag.jpg', 
+    alt: 'Gut gelaunte Vereinsgruppe beim gemeinsamen Ausflug am Bahnhofsgelände', 
+    category: 'Fest' 
+  },
+  { 
+    src: '/images/wandertag2.jpg', 
+    alt: 'Gemeinsames Foto der gesamten Trachtengruppe am Berggipfel im Wald beim Vereinsausflug', 
+    category: 'Fest' 
+  },
+  { 
+    src: '/images/wandertag-abschluss.jpg', 
+    alt: 'Vereinsmitglieder beim Musizieren mit der Harmonika und Trommel beim gemütlichen Ausklang', 
+    category: 'Probe' 
+  },
+  { 
+    src: '/images/wandertag-landschaft.jpg', 
+    alt: 'Idyllischer Ausblick auf die hügelige Landschaft des Mühlviertels rund um Engerwitzdorf', 
+    category: 'Fest' 
+  }
 ];
